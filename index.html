@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kevin kakoma</title>
+    <style>
+        body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(180, 179, 179);
+}
+.profil {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    background: rgb(231, 231, 231);
+    position: relative;
+}
+section#profil {
+    background: url(profil.jpg) fixed;
+    background-size: cover;
+    padding: 200px;
+}
+.debut {
+    padding: 150px;
+    /* background: blue; */
+}
+.debut img {
+    position: absolute;
+    width: 230px;
+    height: 210px;
+    top: 47%;
+    left: 120px;
+    border-radius: 50%;
+    /* background: #e0e0e0;
+    box-shadow:  -5px 5px 0px #5a5a5a,
+                  5px 5px 0px #5a5a5a; */
+}
+img:hover{
+    opacity: 5;
+    transform: scale(1.05);
+}
+.debut h1 {
+    position: absolute;
+    text-transform: uppercase;
+    left: 10%;
+    
+}
+.debut h1:hover {
+    color: rgba(36, 34, 34, 0.712);
+    /* background-color: blue; */
+}
+.debut p {
+    font-size: 18px;
+    position: absolute;
+    bottom: 4%;
+    left: 5%;
+}
+.debut p a {
+    text-decoration: none;
+    color: rgba(44, 43, 43, 0.911);
+}
+/* ****************************************** kill partie *********************************************** */
+
+.skill{
+    display: flex;
+    border: 1px solid  rgb(175, 179, 180);
+    padding: 1.5em;
+    border-radius: 40px;
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    background-color: #e3e6e933;
+    box-shadow:  2px 2px 0px #bababa,
+             -2px -2px 0px #ffffff;
+}
+.skill::before{
+    content: "mes competences";
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    background-color:   rgb(231, 231, 231);
+    padding: 10px 20px;
+}
+.skill .name {
+    display: flex;
+    flex-direction: column;
+    color: #6d7587;
+    font-size: 1em;
+    font-weight: 200;
+}
+.skill .name span {
+    /* background-color: red; */
+    margin: 15px 0;
+    border-radius: 83px;
+background: #e0e0e0;
+box-shadow:  2px 2px 0px #bababa,
+             -2px -2px 0px #ffffff;
+             padding: 5px 10px;
+             text-align: center;
+             border-radius: 50px;
+             border: 5px solid  rgb(219, 226, 230);
+             cursor: pointer;
+}
+.skill .name span:hover {
+    color: rgb(17, 0, 255);
+    box-shadow:  -3px -3px 0px #bababa,
+             3px 3px 0px #ffffff;
+}
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.bar{
+    width: 200px;
+    height: 15px;
+    /* background-color: red; */
+    margin: 16px;
+    margin-right: 40px;
+    border-radius: 30px;
+    box-shadow:  2px 2px 0px #bababa,
+             -2px -2px 0px #ffffff;
+}
+.bar .progress {
+    height: 100%;
+    /* width: 50%; */
+    background-color: rgb(17, 0, 255);
+    border-radius: 20px;
+}
+.bar:nth-child(1) .progress {
+    width: 60%;
+}
+.bar:nth-child(2) .progress {
+    width: 30%;
+}
+.bar:nth-child(3) .progress {
+    width: 10%;
+}
+#proo {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 35%;
+    top: 28em;
+    border-radius: 10px;
+}
+#pro {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 40%;
+    top: 28em;
+    border-radius: 50%;
+}
+#pre {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 45%;
+    top: 28em;
+    border-radius: 50%;
+}
+#pra {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 28em;
+    border-radius: 50%;
+}
+#pri {
+    /* width: 40px; */
+    /* height: 40px; */
+    position: absolute;
+    left: 40%;
+    top: 25em;
+    /* border-radius: 50%; */
+}
+    </style>
+</head>
+<body>
+    <div class="profil">
+    <section id="profil"></section>
+        <div class="debut">
+            <img src="1.jpg" alt="mon profil">
+            <h1>kevin kakoma</h1>
+            <p>Etudiant à <a href="http:\\esisalama.com" title="cliquez ici pour aller à esisalama">ESISALAMA</a><br>Débutant en programmation web</p>
+        </div>
+        <div class="skill">
+            <div class="name">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JAVASCRIPT</span>
+            </div>
+        <div class="bar-container">
+            <div class="bar"><div class="progress"></div></div>
+            <div class="bar"><div class="progress"></div></div>
+            <div class="bar"><div class="progress"></div></div>
+        </div>
+    </div>
+    <div>
+        <a href="mailto:kkakoma3@gmail.com"><img src="gmail.png" alt="" id="proo" title="laissez moi un mail"></a>
+        <img src="whatsapp.jpg" alt="" id="pro" title="+243 974 627 753">
+        <img src="telegram.jpg" alt="" id="pre" title="+243 974 627 753">
+        <img src="appel.jpg" alt="" id="pra" title="+243 974 627 753">
+        <p id="pri">contactez-moi</p>
+    </div>
+    </div>
+</body>
+</html>
